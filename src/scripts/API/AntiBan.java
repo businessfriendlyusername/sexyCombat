@@ -9,7 +9,10 @@ import org.tribot.api.types.generic.Condition;
 import org.tribot.api.util.abc.ABCProperties;
 import org.tribot.api.util.abc.ABCUtil;
 import org.tribot.api2007.*;
-import org.tribot.api2007.types.*;
+import org.tribot.api2007.types.RSItem;
+import org.tribot.api2007.types.RSNPC;
+import org.tribot.api2007.types.RSObject;
+import org.tribot.api2007.types.RSPlayer;
 
 /**
  * The AntiBan class provides an easy way to implement Anti-ban Compliance 2.0 into any script.
@@ -494,7 +497,7 @@ public final class AntiBan {
      *               empty string is inputted.
      * @param name   The name of the gnomebowls or drink.
      * @return True if the gnomebowls/drink was successfully eaten/drank, false otherwise.
-     * @see #eat(String, org.tribot.api2007.types.RSItem)
+     * @see #eat(String, RSItem)
      */
     public static boolean eat(String option, final String name) {
         RSItem food = null;
@@ -514,7 +517,7 @@ public final class AntiBan {
      *               properly if an empty string is inputted.
      * @param id     The ID of the gnomebowls or drink.
      * @return True if the gnomebowls/drink was successfully eaten/drank, false otherwise.
-     * @see #eat(String, org.tribot.api2007.types.RSItem)
+     * @see #eat(String, RSItem)
      */
     public static boolean eat(String option, final int id) {
         RSItem food = null;

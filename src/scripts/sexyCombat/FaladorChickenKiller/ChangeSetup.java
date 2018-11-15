@@ -2,14 +2,11 @@ package scripts.sexyCombat.FaladorChickenKiller;
 
 import org.tribot.api.General;
 import org.tribot.api2007.Combat;
-import org.tribot.api2007.Game;
 import org.tribot.api2007.GameTab;
 import org.tribot.api2007.Skills;
 import scripts.API.Node;
 
 public class ChangeSetup extends Node {
-
-
 
 
     private boolean levelDescrepancy(int descrepancy){

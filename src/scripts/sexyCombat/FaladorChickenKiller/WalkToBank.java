@@ -4,7 +4,6 @@ import org.tribot.api2007.Banking;
 import org.tribot.api2007.Interfaces;
 import org.tribot.api2007.Inventory;
 import org.tribot.api2007.WebWalking;
-import scripts.API.BInventory;
 import scripts.API.Node;
 
 import java.util.function.BooleanSupplier;

@@ -2,14 +2,10 @@ package scripts.sexyCombat.FaladorChickenKiller;
 
 import org.tribot.api.DynamicClicking;
 import org.tribot.api.General;
-import org.tribot.api.Timing;
 import org.tribot.api2007.*;
-import org.tribot.api2007.types.RSGroundItem;
 import org.tribot.api2007.types.RSNPC;
 import scripts.API.AntiBan;
 import scripts.API.Node;
-
-import java.util.function.BooleanSupplier;
 
 public class MurderChickens extends Node {
 
@@ -32,6 +28,7 @@ public class MurderChickens extends Node {
             return;
         }
         RSNPC fightingChicken = null;
+
         for(RSNPC chicken : chickens){
             if(chicken.isInteractingWithMe() && chicken.isInCombat())
                 fightingChicken = chicken;
